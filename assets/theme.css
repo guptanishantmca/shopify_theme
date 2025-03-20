@@ -11,3 +11,7 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+li.menu-item:hover>a {
+    color: #36393D;
+}
