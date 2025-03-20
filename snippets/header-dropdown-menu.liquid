@@ -6,40 +6,6 @@
 {% endcomment %}
 
 <nav class="header__inline-menu">
-  <ul class="flex space-x-6">
-    {% for link in linklists.HeaderMenu.links -%}
-      <li class="relative group">
-        <a href="{{ link.url }}" class="px-4 py-2 block text-black hover:text-gray-700">
-          {{ link.title }}
-        </a>
-
-        {% if link.links != blank %}
-          <ul class="absolute left-0 hidden w-48 bg-white shadow-lg group-hover:block">
-            {% for sub_link in link.links %}
-              <li class="relative group">
-                <a href="{{ sub_link.url }}" class="block px-4 py-2 text-black hover:bg-gray-200">
-                  {{ sub_link.title }}
-                </a>
-
-                {% if sub_link.links != blank %}
-                  <ul class="absolute left-full top-0 hidden w-48 bg-white shadow-lg group-hover:block">
-                    {% for sub_sub_link in sub_link.links %}
-                      <li>
-                        <a href="{{ sub_sub_link.url }}" class="block px-4 py-2 text-black hover:bg-gray-200">
-                          {{ sub_sub_link.title }}
-                        </a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
