@@ -45,6 +45,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/banner.jpg",
+        "image_2": "shopify://shop_images/banner1_52785d6e-6b83-49b7-b353-8ddce2def349.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
