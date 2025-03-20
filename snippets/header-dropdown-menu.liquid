@@ -11,7 +11,7 @@
       <li class="relative group">
         <a
           href="{{ link.url }}"
-          class="header__menu-item list-menu__item link focus-inset group-hover:text-blue-500 px-4 py-2 block"
+          class="header__menu-item list-menu__item link focus-inset group-hover:text-blue-500 px-4 py-2 block hover:text-gray-700"
         >
           {{- link.title | escape -}}
         </a>
@@ -25,7 +25,7 @@
               <li class="relative group">
                 <a
                   href="{{ childlink.url }}"
-                  class="block px-4 py-2   hover:bg-gray-100 flex justify-between"
+                  class="block px-4 py-2  hover:text-gray-700 flex justify-between"
                 >
                   {{ childlink.title | escape }}
                   {%- if childlink.links != blank -%}
@@ -42,7 +42,7 @@
                       <li>
                         <a
                           href="{{ grandchildlink.url }}"
-                          class="block px-4 py-2   hover:bg-gray-100"
+                          class="block px-4 py-2   hover:text-gray-700"
                         >
                           {{ grandchildlink.title | escape }}
                         </a>
