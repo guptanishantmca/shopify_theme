@@ -1,0 +1,13 @@
+.header__inline-menu ul {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.header__inline-menu ul.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.header__inline-menu li:hover>ul {
+    opacity: 1;
+    transform: translateY(0);
+}
