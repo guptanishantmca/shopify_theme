@@ -334,6 +334,7 @@
   .banner--mobile-bottom:not(.banner--stacked) .banner__content {
     order: 2;
     position: absolute;
+    margin-top: 100px;
   }
 
   .banner:not(.banner--mobile-bottom) .field__input,
