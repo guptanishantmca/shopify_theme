@@ -1,0 +1,42 @@
+<!-- sections/about-us-section.liquid -->
+<section class="about-hero">
+  <div class="container">
+    <h1>{{ section.settings.heading }}</h1>
+    <img src="{{ section.settings.hero_image | img_url: 'master' }}" alt="Hero Image">
+  </div>
+</section>
+
+<section class="about-content">
+  <div class="container">
+    <div class="rte">{{ section.settings.description }}</div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Us Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "About Us"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Intro Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Us Section"
+    }
+  ]
+}
+{% endschema %}
