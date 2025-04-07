@@ -1,5 +1,30 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "image_banner_3cX3KE": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/WFS-colorado-springs.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -11,14 +36,44 @@
       "type": "about-us-section",
       "settings": {
         "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "hero_image": "shopify://shop_images/banner1_52785d6e-6b83-49b7-b353-8ddce2def349.jpg",
+        "description": ""
+      }
+    },
+    "rich_text_G3Kgby": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xnT9xW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find Your Perfect Fireplace: Colorado's Trusted Heating Solutions Since 1983",
+            "heading_size": "h1"
+          }
+        },
+        "text_naK3Kd": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Since 1983, Western Fireplace Supply has been Colorado’s leading <br/>provider of heating solutions, assisting countless customers in <br/>discovering the ideal fireplace to enhance their homes. With over 40 <br/>years of expertise, we offer a diverse selection of high-quality <br/>products, including classic wood-burning stoves, contemporary gas <br/>options, and innovative electric fireplaces. Whether you prefer <br/>traditional warmth or modern convenience, we have the perfect solution <br/>to meet your needs.\t\t\t\t\t\t<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xnT9xW",
+        "text_naK3Kd"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
+    "image_banner_3cX3KE",
+    "rich_text_G3Kgby",
     "main",
     "form"
   ]
