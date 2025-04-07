@@ -1,7 +1,7 @@
 <section class="custom-about-elementor-section">
   <div class="custom-container">
     <!-- Column 1: Image -->
-    <div class="custom-column fadeInLeft">
+    <div class="custom-column-20 fadeInLeft">
       <img
         src="{{ section.settings.image | img_url: 'master' }}"
         alt="About Graphic"
@@ -10,7 +10,7 @@
     </div>
 
     <!-- Column 2: Heading + Text -->
-    <div class="custom-column fadeInRight">
+    <div class="custom-column-80 fadeInRight">
       <h3>{{ section.settings.heading }}</h3>
       <div class="rte">{{ section.settings.description }}</div>
     </div>
@@ -24,7 +24,6 @@
   .custom-about-elementor-section {
     padding: 50px 20px;
     background-color: #d5d5d5;
-    color: #ffffff;
   }
   .custom-container {
     max-width: 1200px;
@@ -37,9 +36,23 @@
     width: 100%;
     padding: 20px;
   }
+  .custom-column-20 {
+    width: 100%;
+    padding: 20px;
+  }
+  .custom-column-80 {
+    width: 100%;
+    padding: 20px;
+  }
   @media (min-width: 768px) {
     .custom-column {
       width: 33.333%;
+    }
+    .custom-column-20 {
+      width: 20%;
+    }
+    .custom-column-80 {
+      width: 79%;
     }
     .hide-on-mobile {
       display: block;
