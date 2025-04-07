@@ -1,41 +1,110 @@
-<!-- sections/about-us-section.liquid -->
-<section class="about-hero">
-  <div class="container">
-    <h1>{{ section.settings.heading }}</h1>
-    <img src="{{ section.settings.hero_image | img_url: 'master' }}" alt="Hero Image">
+<section class="custom-about-elementor-section">
+  <div class="custom-container">
+    <!-- Column 1: Image -->
+    <div class="custom-column fadeInLeft">
+      <img
+        src="{{ section.settings.image | img_url: 'master' }}"
+        alt="About Graphic"
+        loading="lazy"
+      >
+    </div>
+
+    <!-- Column 2: Heading + Text -->
+    <div class="custom-column fadeInRight">
+      <h3>{{ section.settings.heading }}</h3>
+      <div class="rte">{{ section.settings.description }}</div>
+    </div>
+
+    <!-- Column 3: Empty on desktop -->
+    <div class="custom-column hide-on-mobile"></div>
   </div>
 </section>
 
-<section class="about-content">
-  <div class="container">
-    <div class="rte">{{ section.settings.description }}</div>
-  </div>
-</section>
+<style>
+  .custom-about-elementor-section {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  .custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .custom-column {
+    width: 100%;
+    padding: 20px;
+  }
+  @media (min-width: 768px) {
+    .custom-column {
+      width: 33.333%;
+    }
+    .hide-on-mobile {
+      display: block;
+    }
+  }
+  @media (max-width: 767px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+
+  /* Animations (optional, simple fade-in) */
+  .fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  .fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
 
 {% schema %}
 {
-  "name": "About Us Section ",
+  "name": "About Us Section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Left Image"
+    },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "About Us"
-    },
-    {
-      "type": "image_picker",
-      "id": "hero_image",
-      "label": "Hero Image"
+      "default": "Find Your Perfect Fireplace: Colorado's Trusted Heating Solutions Since 1983"
     },
     {
       "type": "richtext",
       "id": "description",
-      "label": "Intro Text"
+      "label": "Paragraph",
+      "default": "<p>Since 1983, Western Fireplace Supply has been Colorado’s leading provider of heating solutions...</p>"
     }
   ],
   "presets": [
     {
-      "name": "About Us Section"
+      "name": "About - Elementor Style"
     }
   ]
 }
