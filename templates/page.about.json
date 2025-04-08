@@ -1,5 +1,30 @@
-{
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+ {
   "sections": {
+    "image_banner_3cX3KE": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/WFS-colorado-springs.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -10,15 +35,22 @@
     "form": {
       "type": "about-us-section",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify://shop_images/content-graphic.webp",
+        "heading": "Find Your Perfect Fireplace: Colorado's Trusted Heating Solutions Since 1983",
+        "description": "<p><br/>Since 1983, Western Fireplace Supply has been Colorado’s leading <br/>provider of heating solutions, assisting countless customers in <br/>discovering the ideal fireplace to enhance their homes. With over 40 <br/>years of expertise, we offer a diverse selection of high-quality <br/>products, including classic wood-burning stoves, contemporary gas <br/>options, and innovative electric fireplaces. Whether you prefer <br/>traditional warmth or modern convenience, we have the perfect solution <br/>to meet your needs.\t\t\t\t\t\t<br/><br/></p>"
+      }
+    },
+    "about": {
+      "type": "about-us-section-unmatched",
+      "settings": {
+        "image": "shopify://shop_images/content-graphic.webp",
+        "heading": "Unmatched Service & Expertise",
+        "description": "<p><span style='color: #ffffff;'>Our commitment to exceptional customer service sets us apart...</span></p><p><span style='color: #ffffff;'>We proudly offer products from the finest manufacturers...</span></p><p><span style='color: #ffffff;'>Whether you’re looking to install a new fireplace...</span></p>"
       }
     }
   },
   "order": [
+    "image_banner_3cX3KE",
     "main",
     "form"
   ]
