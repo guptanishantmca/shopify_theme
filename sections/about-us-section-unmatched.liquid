@@ -1,6 +1,11 @@
 <section
   class="custom-full-section fadeIn"
-  style="background-image:url({{ section.settings.image | img_url: 'master' }})"
+  style="
+    background-image:url({{ section.settings.image | img_url: 'master' }});background-position:
+    center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  "
 >
   <div class="custom-elementor-container">
     <!-- Column 1: Text content -->
