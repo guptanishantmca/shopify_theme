@@ -10,15 +10,23 @@
   <div class="custom-elementor-container">
     <!-- Column 1: Text content -->
     <div class="custom-column fadeInLeft">
-      <div class="custom-widget-wrap white-text">
-        <h2 class="  white-text">{{ section.settings.heading }}</h2>
-        <div class="rte white-text">{{ section.settings.description }}</div>
-      </div>
+      {% if section.settings.position == 'left' %}
+        <div class="custom-widget-wrap white-text">
+          <h2 class="  white-text">{{ section.settings.heading }}</h2>
+          <div class="rte white-text">{{ section.settings.description }}</div>
+        </div>
+      {% endif %}
     </div>
 
     <!-- Column 2: Empty (or could hold an image later) -->
     <div class="custom-column fadeInRight">
       <!-- Optional future content -->
+      {% if section.settings.position == 'right' %}
+        <div class="custom-widget-wrap white-text">
+          <h2 class="  white-text">{{ section.settings.heading }}</h2>
+          <div class="rte white-text">{{ section.settings.description }}</div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -119,6 +127,16 @@
       "id": "description",
       "label": "Description",
       "default": "<p><span>Our commitment to exceptional customer service sets us apart...</span></p><p><span>We proudly offer products from the finest manufacturers...</span></p><p><span>Whether you’re looking to install a new fireplace...</span></p>"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Position",
+      "options": [
+        { "value": "left", "label": "Left Side" },
+        { "value": "right", "label": "Right Side" }
+      ],
+      "default": "left"
     }
   ],
   "presets": [
