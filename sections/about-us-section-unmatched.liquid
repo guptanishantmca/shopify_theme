@@ -9,7 +9,7 @@
 >
   <div class="custom-elementor-container">
     <!-- Column 1: Text content -->
-    <div class="custom-column fadeInLeft">
+    <div class="custom-column fadeInLeft  {% if section.settings.position == 'left' %}with-bg{% endif %}">
       {% if section.settings.position == 'left' %}
         <div class="custom-widget-wrap white-text">
           <h2 class="  white-text">{{ section.settings.heading }}</h2>
@@ -19,7 +19,7 @@
     </div>
 
     <!-- Column 2: Empty (or could hold an image later) -->
-    <div class="custom-column fadeInRight">
+    <div class="custom-column fadeInRight  {% if section.settings.position == 'right' %}with-bg{% endif %}">
       <!-- Optional future content -->
       {% if section.settings.position == 'right' %}
         <div class="custom-widget-wrap white-text">
@@ -60,7 +60,9 @@
   .white-text {
     color: #ffffff;
   }
-
+  .with-bg {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  }
   /* Simple fade animations */
   .fadeIn {
     animation: fadeIn 1s ease-in-out;
@@ -68,7 +70,6 @@
 
   .fadeInLeft {
     animation: fadeInLeft 1s ease-in-out;
-    background-color: #00000085;
   }
 
   .fadeInRight {
