@@ -40,18 +40,19 @@
         "description": "<p><br/>Since 1983, Western Fireplace Supply has been Colorado’s leading <br/>provider of heating solutions, assisting countless customers in <br/>discovering the ideal fireplace to enhance their homes. With over 40 <br/>years of expertise, we offer a diverse selection of high-quality <br/>products, including classic wood-burning stoves, contemporary gas <br/>options, and innovative electric fireplaces. Whether you prefer <br/>traditional warmth or modern convenience, we have the perfect solution <br/>to meet your needs.\t\t\t\t\t\t<br/><br/></p>"
       }
     },
-    "about": {
+    "about_us_section_unmatched_jAtQGF": {
       "type": "about-us-section-unmatched",
       "settings": {
-        "image": "shopify://shop_images/content-graphic.webp",
+        "image": "shopify://shop_images/864-Clean-Face.jpg",
         "heading": "Unmatched Service & Expertise",
-        "description": "<p><span style='color: #ffffff;'>Our commitment to exceptional customer service sets us apart...</span></p><p><span style='color: #ffffff;'>We proudly offer products from the finest manufacturers...</span></p><p><span style='color: #ffffff;'>Whether you’re looking to install a new fireplace...</span></p>"
+        "description": "<p>Our commitment to exceptional customer service sets us apart...</p><p>We proudly offer products from the finest manufacturers...</p><p>Whether you’re looking to install a new fireplace...</p>"
       }
     }
   },
   "order": [
     "image_banner_3cX3KE",
     "main",
-    "form"
+    "form",
+    "about_us_section_unmatched_jAtQGF"
   ]
 }
