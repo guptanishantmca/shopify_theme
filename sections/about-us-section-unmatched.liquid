@@ -1,7 +1,10 @@
-<section class="custom-full-section fadeIn">
+<section
+  class="custom-full-section fadeIn"
+  style="background-image:url({{ section.settings.image | img_url: 'master' }})"
+>
   <div class="custom-elementor-container">
     <!-- Column 1: Text content -->
-    <div class="custom-column fadeInLeft" style="background-image:{{ section.settings.image | img_url: 'master' }}">
+    <div class="custom-column fadeInLeft">
       <div class="custom-widget-wrap">
         <h2>{{ section.settings.heading }}</h2>
         <div class="rte white-text">{{ section.settings.description }}</div>
