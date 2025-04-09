@@ -25,13 +25,7 @@
         "show_text_below": true
       }
     },
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
+    
     "form": {
       "type": "about-us-section",
       "settings": {
@@ -70,7 +64,7 @@
   },
   "order": [
     "image_banner_3cX3KE",
-    "main",
+    
     "form",
     "about_us_section_unmatched_jAtQGF",
     "about_us_section_unmatched_ceMh47",
