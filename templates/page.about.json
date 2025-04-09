@@ -57,6 +57,15 @@
         "description": "<p>At Western Fireplace Supply, exceptional service is as important as high-quality products. Our dedicated sales team is here to offer personalized guidance, helping you navigate our extensive selection to find the perfect fireplace for your home. We take the time to understand your unique needs and preferences, ensuring you make an informed decision that enhances your living space.Once you select your ideal fireplace, our experienced installation team guarantees a seamless setup. We pride ourselves on our meticulous attention to detail and commitment to <br/>safety, ensuring your new heating solution is installed correctly and efficiently. With Western Fireplace Supply, you can trust that you will receive the best products and reliable service at every process step. Your comfort and satisfaction are our top priorities. We stand behind our work with a simple guarantee: if you encounter any issues, we will resolve them to your satisfaction or return your money. Experience the difference with <br/>Western Fireplace Supply.<br/><br/></p>",
         "position": "right"
       }
+    },
+    "about_us_section_unmatched_Gb4xTA": {
+      "type": "about-us-section-unmatched",
+      "settings": {
+        "image": "shopify://shop_images/108967.jpg",
+        "heading": "Your Reliable Source for Quality Fireplaces",
+        "description": "<p>When you visit our locations, our <br/>knowledgeable staff provides personalized attention and expert guidance tailored to your needs. With your budget in mind, we offer customized recommendations and transparent pricing—ensuring no surprises or hidden fees. Your new fireplace or stove will deliver years of reliable service backed by a solid warranty. While many places sell fireplaces, you can trust Western Fireplace Supply as your premier choice for quality in Colorado. Our highest priority is your family’s safety. All hearth products are installed by certified specialists for your peace of mind. Call us toll-free at 1-800-530-8929 today for local supplier recommendations or to learn more about our offerings!</p>",
+        "position": "left"
+      }
     }
   },
   "order": [
@@ -64,6 +73,7 @@
     "main",
     "form",
     "about_us_section_unmatched_jAtQGF",
-    "about_us_section_unmatched_ceMh47"
+    "about_us_section_unmatched_ceMh47",
+    "about_us_section_unmatched_Gb4xTA"
   ]
 }
