@@ -9,15 +9,65 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "image_banner_3cX3KE": {
+      "type": "image-banner",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "image": "shopify://shop_images/WFS-colorado-springs.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    
+    "form": {
+      "type": "about-us-section",
+      "settings": {
+        "image": "shopify://shop_images/content-graphic.webp",
+        "heading": "Find Your Perfect Fireplace: Colorado's Trusted Heating Solutions Since 1983",
+        "description": "<p><br/>Since 1983, Western Fireplace Supply has been Colorado’s leading <br/>provider of heating solutions, assisting countless customers in <br/>discovering the ideal fireplace to enhance their homes. With over 40 <br/>years of expertise, we offer a diverse selection of high-quality <br/>products, including classic wood-burning stoves, contemporary gas <br/>options, and innovative electric fireplaces. Whether you prefer <br/>traditional warmth or modern convenience, we have the perfect solution <br/>to meet your needs.\t\t\t\t\t\t<br/><br/></p>"
+      }
+    },
+    "about_us_section_unmatched_jAtQGF": {
+      "type": "about-us-section-unmatched",
+      "settings": {
+        "image": "shopify://shop_images/864-Clean-Face.jpg",
+        "heading": "Unmatched Service & Expertise",
+        "description": "<p>Our commitment to exceptional customer service sets us apart. Our knowledgeable team guides you through the selection process, helping you find the ideal fireplace for your home and lifestyle. With showrooms in Avon (Vail/Beaver Creek), Colorado Springs, and Fort Collins, we provide one of Colorado’s largest selections of burning displays, allowing you to experience our products firsthand before installation.</p><p>We proudly offer products from the finest manufacturers in the industry, ensuring competitive pricing and expert advice from our dedicated team. To make your decision easier, we provide free, in-home consultations with experienced hearth experts to match your specific needs.</p><p>Whether you’re looking to install a new fireplace, upgrade an existing one, or explore your options, visit our showroom or contact us today. Experience the warmth and beauty a fireplace. </p>",
+        "position": "left"
+      }
+    },
+    "about_us_section_unmatched_ceMh47": {
+      "type": "about-us-section-unmatched",
+      "settings": {
+        "image": "shopify://shop_images/Escape-I35-Chateau-Forge.jpg",
+        "heading": "Expert Fireplace Sales & Installation with Satisfaction Guaranteed",
+        "description": "<p>At Western Fireplace Supply, exceptional service is as important as high-quality products. Our dedicated sales team is here to offer personalized guidance, helping you navigate our extensive selection to find the perfect fireplace for your home. We take the time to understand your unique needs and preferences, ensuring you make an informed decision that enhances your living space.Once you select your ideal fireplace, our experienced installation team guarantees a seamless setup. We pride ourselves on our meticulous attention to detail and commitment to <br/>safety, ensuring your new heating solution is installed correctly and efficiently. With Western Fireplace Supply, you can trust that you will receive the best products and reliable service at every process step. Your comfort and satisfaction are our top priorities. We stand behind our work with a simple guarantee: if you encounter any issues, we will resolve them to your satisfaction or return your money. Experience the difference with <br/>Western Fireplace Supply.<br/><br/></p>",
+        "position": "right"
+      }
+    },
+    "about_us_section_unmatched_Gb4xTA": {
+      "type": "about-us-section-unmatched",
+      "settings": {
+        "image": "shopify://shop_images/108967.jpg",
+        "heading": "Your Reliable Source for Quality Fireplaces",
+        "description": "<p>When you visit our locations, our <br/>knowledgeable staff provides personalized attention and expert guidance tailored to your needs. With your budget in mind, we offer customized recommendations and transparent pricing—ensuring no surprises or hidden fees. Your new fireplace or stove will deliver years of reliable service backed by a solid warranty. While many places sell fireplaces, you can trust Western Fireplace Supply as your premier choice for quality in Colorado. Our highest priority is your family’s safety. All hearth products are installed by certified specialists for your peace of mind. Call us toll-free at 1-800-530-8929 today for local supplier recommendations or to learn more about our offerings!</p>",
+        "position": "left"
       }
     }
   },
   "order": [
-    "main"
+    "image_banner_3cX3KE",
+    
+    "form",
+    "about_us_section_unmatched_jAtQGF",
+    "about_us_section_unmatched_ceMh47",
+    "about_us_section_unmatched_Gb4xTA"
   ]
 }
