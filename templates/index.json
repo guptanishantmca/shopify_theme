@@ -9,16 +9,6 @@
  */
 {
   "sections": {
-    "about_us_section_unmatched_yxz3hJ": {
-      "type": "about-us-section-unmatched",
-      "name": "About Unmatched",
-      "settings": {
-        "image": "shopify://shop_images/DaVinciGSE_Install_Straight_8x6_4590a16a-825b-481a-950d-79a01268b121.jpg",
-        "heading": "FIREPLACES",
-        "description": "<p>Fireplaces are essential heating solutions<br/> for both indoor and outdoor spaces, serving as stylish centerpieces. <br/>Today’s energy-efficient wood and gas-burning models provide targeted <br/>warmth to the areas you use most, reducing energy consumption. With <br/>advanced technology and customizable designs, including the option to <br/>build your own, fireplaces enhance your home’s comfort and are <br/>recognized as valuable investments.<br/><br/></p>",
-        "position": "left"
-      }
-    },
     "slideshow_XMC4Dj": {
       "type": "slideshow",
       "blocks": {
@@ -66,12 +56,22 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
-        "slider_visual": "dots",
+        "slider_visual": "none",
         "auto_rotate": true,
         "change_slides_speed": 7,
         "image_behavior": "ambient",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "about_us_section_unmatched_yxz3hJ": {
+      "type": "about-us-section-unmatched",
+      "name": "About Unmatched",
+      "settings": {
+        "image": "shopify://shop_images/DaVinciGSE_Install_Straight_8x6_4590a16a-825b-481a-950d-79a01268b121.jpg",
+        "heading": "FIREPLACES",
+        "description": "<p>Fireplaces are essential heating solutions<br/> for both indoor and outdoor spaces, serving as stylish centerpieces. <br/>Today’s energy-efficient wood and gas-burning models provide targeted <br/>warmth to the areas you use most, reducing energy consumption. With <br/>advanced technology and customizable designs, including the option to <br/>build your own, fireplaces enhance your home’s comfort and are <br/>recognized as valuable investments.<br/><br/></p>",
+        "position": "left"
       }
     },
     "image_banner": {
