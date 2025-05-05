@@ -2246,7 +2246,8 @@
               "options": {
                 "option_1": "Dots",
                 "option_2": "Counter",
-                "option_3": "Numbers"
+                "option_3": "Numbers",
+                "option_4": "None",
               }
             },
             "product_card": {
