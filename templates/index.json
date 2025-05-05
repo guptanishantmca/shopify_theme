@@ -281,42 +281,25 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_3cX3KE": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/WFS-colorado-springs.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
-    "about_us_section_unmatched_jAtQGF": {
+    "about_us_section_unmatched_yxz3hJ": {
       "type": "about-us-section-unmatched",
+      "name": "About Unmatched",
       "settings": {
-        "image": "shopify://shop_images/864-Clean-Face.jpg",
-        "heading": "Unmatched Service & Expertise",
-        "description": "..."
+        "image": "shopify://shop_images/DaVinciGSE_Install_Straight_8x6_4590a16a-825b-481a-950d-79a01268b121.jpg",
+        "heading": "FIREPLACES",
+        "description": "<p>Fireplaces are essential heating solutions<br/> for both indoor and outdoor spaces, serving as stylish centerpieces. <br/>Today’s energy-efficient wood and gas-burning models provide targeted <br/>warmth to the areas you use most, reducing energy consumption. With <br/>advanced technology and customizable designs, including the option to <br/>build your own, fireplaces enhance your home’s comfort and are <br/>recognized as valuable investments.<br/><br/></p>",
+        "position": "left"
       }
     }
-    // Add other sections as needed...
-  },
   },
   "order": [
     "slideshow_XMC4Dj",
-    "image_banner_3cX3KE",
-    "about_us_section_unmatched_jAtQGF",
     "image_banner",
     "rich_text",
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "about_us_section_unmatched_yxz3hJ"
   ]
 }
