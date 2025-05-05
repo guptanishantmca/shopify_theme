@@ -290,10 +290,20 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "about_us_section_BdK6qN": {
+      "type": "about-us-section",
+      "name": "About -  Elementor Style",
+      "settings": {
+        "image": "shopify://shop_images/content-graphic.webp",
+        "heading": "40+ Years of Expertise in Wood, Gas, and Pellet Solutions",
+        "description": "<p><br/>Since 1983, Western Fireplace Supply has been Colorado’s leading <br/>provider of quality heating solutions. With over 40 years of expertise, <br/>we offer an expansive selection of high-quality industries’ finest <br/>fireplaces, including classic wood-burning, modern gas, and <br/>energy-efficient pellet models. Discover the perfect fireplace, stove, <br/>or insert to enhance your home’s elegance and warmth with Western <br/>Fireplace Supply, where comfort meets style.<br/><br/></p>"
+      }
     }
   },
   "order": [
     "slideshow_XMC4Dj",
+    "about_us_section_BdK6qN",
     "about_us_section_unmatched_yxz3hJ",
     "image_banner",
     "rich_text",
