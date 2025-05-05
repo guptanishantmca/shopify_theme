@@ -3042,6 +3042,9 @@
           },
           "options__3": {
             "label": "Numbers"
+          },
+          "options__4": {
+            "label": "None"
           }
         },
         "auto_rotate": {
