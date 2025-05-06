@@ -81,10 +81,17 @@
           "settings": {
             "image": "shopify://shop_images/DaVinciGSE_Install_Straight_8x6_4590a16a-825b-481a-950d-79a01268b121.jpg"
           }
+        },
+        "slide_ae3ejk": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/110149-scaled.jpg"
+          }
         }
       },
       "block_order": [
-        "slide_tiWcRc"
+        "slide_tiWcRc",
+        "slide_ae3ejk"
       ],
       "name": "About Unmatched",
       "settings": {
