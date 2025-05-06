@@ -100,6 +100,33 @@
         "position": "left"
       }
     },
+    "about_us_section_unmatched_9YfqMT": {
+      "type": "about-us-section-unmatched",
+      "blocks": {
+        "slide_X8dWK6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Escape-I35-Chateau-Forge.jpg"
+          }
+        },
+        "slide_dEeeqx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DaVinciGSE_Install_Straight_8x6_4590a16a-825b-481a-950d-79a01268b121.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_X8dWK6",
+        "slide_dEeeqx"
+      ],
+      "name": "About Unmatched",
+      "settings": {
+        "heading": "FREESTANDING STOVES",
+        "description": "<p>Today’s wood-burning, gas, and pellet-burning stoves combine timeless charm with modern efficiency. These versatile heating solutions feature easy, low-impact installation, needing only a hearth for placement. Since they aren’t built into <br/>walls, all heat remains in the room where it’s needed. Stoves also serve as reliable emergency heat sources and often include a convenient cooktop surface.</p>",
+        "position": "right"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -322,6 +349,7 @@
     "slideshow_XMC4Dj",
     "about_us_section_BdK6qN",
     "about_us_section_unmatched_yxz3hJ",
+    "about_us_section_unmatched_9YfqMT",
     "image_banner",
     "rich_text",
     "featured_collection",
