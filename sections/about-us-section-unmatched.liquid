@@ -17,6 +17,11 @@
         <div class="custom-widget-wrap white-text">
           <h2 class="white-text">{{ section.settings.heading }}</h2>
           <div class="rte white-text">{{ section.settings.description }}</div>
+          {% if section.settings.button_text and section.settings.button_link %}
+            <a href="{{ section.settings.button_link }}" class="custom-button">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
         </div>
       {% endif %}
     </div>
@@ -27,6 +32,11 @@
         <div class="custom-widget-wrap white-text">
           <h2 class="white-text">{{ section.settings.heading }}</h2>
           <div class="rte white-text">{{ section.settings.description }}</div>
+          {% if section.settings.button_text and section.settings.button_link %}
+            <a href="{{ section.settings.button_link }}" class="custom-button">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
         </div>
       {% endif %}
     </div>
@@ -81,6 +91,23 @@
   .custom-column {
     width: 100%;
     padding: 20px;
+  }
+
+  .custom-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
   }
 
   @media (min-width: 768px) {
@@ -194,6 +221,17 @@
         { "value": "right", "label": "Right Side" }
       ],
       "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
     }
   ],
   "blocks": [
