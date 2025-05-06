@@ -97,7 +97,9 @@
       "settings": {
         "heading": "FIREPLACES",
         "description": "<p>Fireplaces are essential heating solutions<br/> for both indoor and outdoor spaces, serving as stylish centerpieces. Today’s energy-efficient wood and gas-burning models provide targeted warmth to the areas you use most, reducing energy consumption. With advanced technology and customizable designs, including the option to build your own, fireplaces enhance your home’s comfort and are recognized as valuable investments.<br/><br/></p>",
-        "position": "left"
+        "position": "left",
+        "button_text": "See All Fireplaces",
+        "button_link": "shopify://collections/automated-collection"
       }
     },
     "about_us_section_unmatched_9YfqMT": {
@@ -124,7 +126,9 @@
       "settings": {
         "heading": "FREESTANDING STOVES",
         "description": "<p>Today’s wood-burning, gas, and pellet-burning stoves combine timeless charm with modern efficiency. These versatile heating solutions feature easy, low-impact installation, needing only a hearth for placement. Since they aren’t built into <br/>walls, all heat remains in the room where it’s needed. Stoves also serve as reliable emergency heat sources and often include a convenient cooktop surface.</p>",
-        "position": "right"
+        "position": "right",
+        "button_text": "See All Freestanding Stoves",
+        "button_link": "shopify://collections"
       }
     },
     "about_us_section_unmatched_Cw68Wk": {
@@ -151,7 +155,9 @@
       "settings": {
         "heading": "FIRE PITS",
         "description": "<p>Explore our premium selection of fire pits, including customizable options from the award-winning Fire Garden Linear Stainless Steel Burners and Voracious line of Stainless Steel Burners that produce unrivaled fire pit flames. Crafted for durability and style, these weather-proof fire pits feature heavy-duty construction, tempered glass wind guards, and the reliable All-Weather 24V Hot Shot™ Ignition system for year-round enjoyment. Choose from various finishes to match your aesthetic and create the perfect ambiance for gatherings. Enjoy cozy evenings under the stars with a stunning fire feature that enhances your outdoor experience! Fire Garden, it’s all about the fire!</p>",
-        "position": "left"
+        "position": "left",
+        "button_text": "See All Fire Pits",
+        "button_link": "shopify://collections"
       }
     },
     "image_banner": {
