@@ -75,9 +75,19 @@
     },
     "about_us_section_unmatched_yxz3hJ": {
       "type": "about-us-section-unmatched",
+      "blocks": {
+        "slide_tiWcRc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/DaVinciGSE_Install_Straight_8x6_4590a16a-825b-481a-950d-79a01268b121.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_tiWcRc"
+      ],
       "name": "About Unmatched",
       "settings": {
-        "image": "shopify://shop_images/DaVinciGSE_Install_Straight_8x6_4590a16a-825b-481a-950d-79a01268b121.jpg",
         "heading": "FIREPLACES",
         "description": "<p>Fireplaces are essential heating solutions<br/> for both indoor and outdoor spaces, serving as stylish centerpieces. Today’s energy-efficient wood and gas-burning models provide targeted warmth to the areas you use most, reducing energy consumption. With advanced technology and customizable designs, including the option to build your own, fireplaces enhance your home’s comfort and are recognized as valuable investments.<br/><br/></p>",
         "position": "left"
