@@ -127,6 +127,33 @@
         "position": "right"
       }
     },
+    "about_us_section_unmatched_Cw68Wk": {
+      "type": "about-us-section-unmatched",
+      "blocks": {
+        "slide_6YhctK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/110812-scaled.jpg"
+          }
+        },
+        "slide_4MUpU4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/110808-scaled.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_6YhctK",
+        "slide_4MUpU4"
+      ],
+      "name": "About Unmatched",
+      "settings": {
+        "heading": "FIRE PITS",
+        "description": "<p>Explore our premium selection of fire pits, including customizable options from the award-winning Fire Garden Linear Stainless Steel Burners and Voracious line of Stainless Steel Burners that produce unrivaled fire pit flames. Crafted for durability and style, these weather-proof fire pits feature heavy-duty construction, tempered glass wind guards, and the reliable All-Weather 24V Hot Shot™ Ignition system for year-round enjoyment. Choose from various finishes to match your aesthetic and create the perfect ambiance for gatherings. Enjoy cozy evenings under the stars with a stunning fire feature that enhances your outdoor experience! Fire Garden, it’s all about the fire!</p>",
+        "position": "left"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -350,6 +377,7 @@
     "about_us_section_BdK6qN",
     "about_us_section_unmatched_yxz3hJ",
     "about_us_section_unmatched_9YfqMT",
+    "about_us_section_unmatched_Cw68Wk",
     "image_banner",
     "rich_text",
     "featured_collection",
