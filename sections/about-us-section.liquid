@@ -1,4 +1,13 @@
 <section class="custom-about-elementor-section">
+  <div class="background-slider">
+    {% for block in section.blocks %}
+      <div
+        class="background-slide"
+        style="background-image: url('{{ block.settings.image | img_url: 'master' }}');"
+      ></div>
+    {% endfor %}
+  </div>
+
   <div class="custom-container">
     <!-- Column 1: Image -->
     <div class="custom-column-20 fadeInLeft">
@@ -22,28 +31,60 @@
 
 <style>
   .custom-about-elementor-section {
+    position: relative;
     padding: 50px 20px;
     background-color: #d5d5d5;
+    overflow: hidden;
   }
+
+  .background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .background-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .background-slide.active {
+    opacity: 1;
+  }
+
   .custom-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 0;
+    position: relative;
+    z-index: 1;
   }
+
   .custom-column {
     width: 100%;
     padding: 20px;
   }
+
   .custom-column-20 {
     width: 100%;
     padding: 20px;
   }
+
   .custom-column-80 {
     width: 100%;
     padding: 20px;
   }
+
   @media (min-width: 768px) {
     .custom-column {
       width: 33.333%;
@@ -58,6 +99,7 @@
       display: block;
     }
   }
+
   @media (max-width: 767px) {
     .hide-on-mobile {
       display: none;
@@ -68,6 +110,7 @@
   .fadeInLeft {
     animation: fadeInLeft 1s ease-in-out;
   }
+
   .fadeInRight {
     animation: fadeInRight 1s ease-in-out;
   }
@@ -82,6 +125,7 @@
       transform: translateX(0);
     }
   }
+
   @keyframes fadeInRight {
     from {
       opacity: 0;
@@ -93,6 +137,29 @@
     }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.background-slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    if (slides.length > 0) {
+      showSlide(current);
+      setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+  });
+</script>
 
 {% schema %}
 {
@@ -116,9 +183,22 @@
       "default": "<p>Since 1983, Western Fireplace Supply has been Colorado’s leading provider of heating solutions...</p>"
     }
   ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Background Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background Image"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "About -  Elementor Style"
+      "name": "About - Elementor Style"
     }
   ]
 }
