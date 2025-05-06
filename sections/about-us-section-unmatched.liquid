@@ -1,29 +1,29 @@
-<section
-  class="custom-full-section fadeIn"
-  style="
-    background-image:url({{ section.settings.image | img_url: 'master' }});background-position:
-    center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  "
->
+<section class="custom-full-section fadeIn">
+  <div class="background-slider">
+    {% for block in section.blocks %}
+      <div
+        class="background-slide"
+        style="background-image: url('{{ block.settings.image | img_url: 'master' }}'); background-position: center center; background-repeat: no-repeat; background-size: cover;"
+      ></div>
+    {% endfor %}
+  </div>
+
   <div class="custom-elementor-container">
     <!-- Column 1: Text content -->
-    <div class="custom-column fadeInLeft  {% if section.settings.position == 'left' %}with-bg{% endif %}">
+    <div class="custom-column fadeInLeft {% if section.settings.position == 'left' %}with-bg{% endif %}">
       {% if section.settings.position == 'left' %}
         <div class="custom-widget-wrap white-text">
-          <h2 class="  white-text">{{ section.settings.heading }}</h2>
+          <h2 class="white-text">{{ section.settings.heading }}</h2>
           <div class="rte white-text">{{ section.settings.description }}</div>
         </div>
       {% endif %}
     </div>
 
     <!-- Column 2: Empty (or could hold an image later) -->
-    <div class="custom-column fadeInRight  {% if section.settings.position == 'right' %}with-bg{% endif %}">
-      <!-- Optional future content -->
+    <div class="custom-column fadeInRight {% if section.settings.position == 'right' %}with-bg{% endif %}">
       {% if section.settings.position == 'right' %}
         <div class="custom-widget-wrap white-text">
-          <h2 class="  white-text">{{ section.settings.heading }}</h2>
+          <h2 class="white-text">{{ section.settings.heading }}</h2>
           <div class="rte white-text">{{ section.settings.description }}</div>
         </div>
       {% endif %}
@@ -34,19 +34,46 @@
 <style>
   .custom-full-section {
     width: 100%;
+    background-color: #1a1a1a;
+    position: relative;
+    overflow: hidden;
+  }
 
-    background-color: #1a1a1a; /* Dark background for white text */
+  .background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .background-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .background-slide.active {
+    opacity: 1;
   }
 
   .custom-widget-wrap {
-    padding: 12% 12% 12% 12%;
+    padding: 12%;
   }
+
   .custom-elementor-container {
     display: flex;
     flex-wrap: wrap;
     gap: 0;
     max-width: 1600px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
   }
 
   .custom-column {
@@ -64,10 +91,11 @@
     color: #ffffff;
     font-weight: bold;
   }
+
   .with-bg {
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5);
   }
-  /* Simple fade animations */
+
   .fadeIn {
     animation: fadeIn 1s ease-in-out;
   }
@@ -112,15 +140,33 @@
   }
 </style>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.background-slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    if (slides.length > 0) {
+      showSlide(current);
+      setInterval(nextSlide, 5000); // 5 seconds per slide
+    }
+  });
+</script>
+
 {% schema %}
 {
   "name": "About Unmatched Service",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Background Image"
-    },
     {
       "type": "text",
       "id": "heading",
@@ -142,6 +188,19 @@
         { "value": "right", "label": "Right Side" }
       ],
       "default": "left"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Background Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background Image"
+        }
+      ]
     }
   ],
   "presets": [
