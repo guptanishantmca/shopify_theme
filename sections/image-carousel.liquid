@@ -2,13 +2,13 @@
   <!-- Slider main container -->
   <div class="swiper">
     <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+    <swiper-container slides-per-view="3" speed="500" loop="true" css-mode="true">
       {% for block in section.blocks %}
-        <div class="swiper-slide">
+        <swiper-slide>
           <img src="{{ block.settings.image | img_url: 'master' }}" alt="Slide Image">
-        </div>
+        </swiper-slide>
       {% endfor %}
-    </div>
+    </swiper-container>
 
     <!-- If you want navigation buttons -->
     <div class="swiper-button-next"></div>
@@ -47,18 +47,13 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    new Swiper('.swiper', {
+      slidesPerView: 3,
+      grid: {
+        rows: 3,
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      autoplay: {
-        delay: 3000,
+      mousewheel: {
+        forceToAxis: true,
       },
     });
   });
