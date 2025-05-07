@@ -391,11 +391,53 @@
           "settings": {
             "image": "shopify://shop_images/stellar.jpg"
           }
+        },
+        "slide_8K4w6e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Vermont-Castings.webp"
+          }
+        },
+        "slide_b7qKUX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/davinci.jpg"
+          }
+        },
+        "slide_4rKGrp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/FireGarden.jpg"
+          }
+        },
+        "slide_K8yJ6a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/FireplaceX.jpg"
+          }
+        },
+        "slide_4Y6kBV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/heatglo.jpg"
+          }
+        },
+        "slide_zr9VXx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Lopi.jpg"
+          }
         }
       },
       "block_order": [
         "slide_QDbzJG",
-        "slide_MdtyQ7"
+        "slide_MdtyQ7",
+        "slide_8K4w6e",
+        "slide_b7qKUX",
+        "slide_4rKGrp",
+        "slide_K8yJ6a",
+        "slide_4Y6kBV",
+        "slide_zr9VXx"
       ],
       "name": "Image Carousel",
       "settings": {}
