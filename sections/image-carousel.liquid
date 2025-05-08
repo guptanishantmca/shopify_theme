@@ -36,11 +36,10 @@
 
       {% comment %} height: 300px; /* adjust as needed */ {% endcomment %}
     }
-  .swiper-wrapper{
+  .swiper-slide{
     display: flex;
-    justify-content: center;  /* horizontal center */
-    align-items: center;      /* vertical center */
-    height: 100%;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
   }
     .swiper-slide img {
       {% comment %} width: 100%;
@@ -48,12 +47,13 @@
       max-width: 150px;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.3s ease;
 
     }
     .swiper-slide img:hover {
 
     transform: scale(1.15); /* 15% bigger */
-    transition: transform 0.3s ease;
+
     }
 
     .swiper-button-next,.swiper-button-prev{
