@@ -440,7 +440,9 @@
         "slide_zr9VXx"
       ],
       "name": "Image Carousel",
-      "settings": {}
+      "settings": {
+        "heading": "WE CARRY THE BEST BRANDS IN THE HEARTH INDUSTRY"
+      }
     }
   },
   "order": [
