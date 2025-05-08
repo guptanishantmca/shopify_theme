@@ -383,49 +383,57 @@
         "slide_QDbzJG": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/simplifire-logo.webp"
+            "image": "shopify://shop_images/simplifire-logo.webp",
+            "link": "shopify://collections"
           }
         },
         "slide_MdtyQ7": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/stellar.jpg"
+            "image": "shopify://shop_images/stellar.jpg",
+            "link": ""
           }
         },
         "slide_8K4w6e": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Vermont-Castings.webp"
+            "image": "shopify://shop_images/Vermont-Castings.webp",
+            "link": ""
           }
         },
         "slide_b7qKUX": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/davinci.jpg"
+            "image": "shopify://shop_images/davinci.jpg",
+            "link": ""
           }
         },
         "slide_4rKGrp": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/FireGarden.jpg"
+            "image": "shopify://shop_images/FireGarden.jpg",
+            "link": ""
           }
         },
         "slide_K8yJ6a": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/FireplaceX.jpg"
+            "image": "shopify://shop_images/FireplaceX.jpg",
+            "link": ""
           }
         },
         "slide_4Y6kBV": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/heatglo.jpg"
+            "image": "shopify://shop_images/heatglo.jpg",
+            "link": ""
           }
         },
         "slide_zr9VXx": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Lopi.jpg"
+            "image": "shopify://shop_images/Lopi.jpg",
+            "link": ""
           }
         }
       },
