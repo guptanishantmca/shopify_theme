@@ -7,6 +7,8 @@
   media="print"
   onload="this.media='all'"
 >
+{% assign menu_data = settings.mega_menu_json | parse_json %}
+{% render 'recursive-menu', items: menu_data, level: 1 %}
 
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">

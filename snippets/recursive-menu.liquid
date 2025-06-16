@@ -1,0 +1,22 @@
+<ul class="dropdown level-{{ level }} absolute bg-white shadow-lg w-48 z-50 hidden group-hover:block">
+  {% for item in items %}
+    <li class="relative group">
+      <a
+        href="{{ item.url }}"
+        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 flex justify-between"
+      >
+        {{ item.title }}
+        {% if item.children -%}
+          <span>▶</span>
+        {%- endif %}
+      </a>
+
+      {% if item.children %}
+        {% assign next_level = level | plus: 1 %}
+        <div class="absolute top-0 left-full group-hover:block hidden">
+          {% render 'recursive-menu', items: item.children, level: next_level %}
+        </div>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
