@@ -5,27 +5,25 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu relative">
-  <ul class="list-menu list-menu--inline flex space-x-6 color-{{ section.settings.menu_color_scheme }}" role="list">
+<nav class="header__inline-menu relative z-50">
+  <ul class="list-menu list-menu--inline flex space-x-6" role="list">
     {%- for link in section.settings.menu.links -%}
-      <li class="relative group main-menu ">
+      <li class="relative group">
         <a
           href="{{ link.url }}"
-          class="header__menu-item list-menu__item   focus-inset group-hover:text-blue-500 px-4 py-2 block hover:text-gray-700"
+          class="header__menu-item list-menu__item link focus-inset group-hover:text-blue-500 px-4 py-2 block"
         >
-          {{- link.title | escape -}}
+          {{ link.title | escape }}
         </a>
 
         {%- if link.links != blank -%}
-          <!-- First Level Dropdown -->
-          <ul
-            class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 transition-opacity duration-300 opacity-0 group-hover:opacity-100 color-{{ section.settings.menu_color_scheme }}"
-          >
+          <!-- Level 1 Dropdown -->
+          <ul class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 transition-all duration-200 z-40">
             {%- for childlink in link.links -%}
-              <li class="relative group menu-item">
+              <li class="relative group">
                 <a
                   href="{{ childlink.url }}"
-                  class="block px-4 py-2  hover:text-gray-700 flex justify-between"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between"
                 >
                   {{ childlink.title | escape }}
                   {%- if childlink.links != blank -%}
@@ -34,18 +32,35 @@
                 </a>
 
                 {%- if childlink.links != blank -%}
-                  <!-- Second Level Dropdown -->
-                  <ul
-                    class="absolute left-full top-0 hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 transition-opacity duration-300 opacity-0 group-hover:opacity-100 color-{{ section.settings.menu_color_scheme }}"
-                  >
+                  <!-- Level 2 Dropdown -->
+                  <ul class="absolute left-full top-0 hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 transition-all duration-200 z-40">
                     {%- for grandchildlink in childlink.links -%}
-                      <li class="menu-item">
+                      <li class="relative group">
                         <a
                           href="{{ grandchildlink.url }}"
-                          class="block px-4 py-2   hover:text-gray-700"
+                          class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-between"
                         >
                           {{ grandchildlink.title | escape }}
+                          {%- if grandchildlink.links != blank -%}
+                            <span>▶</span>
+                          {%- endif -%}
                         </a>
+
+                        {%- if grandchildlink.links != blank -%}
+                          <!-- Level 3 Dropdown -->
+                          <ul class="absolute left-full top-0 hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48 transition-all duration-200 z-40">
+                            {%- for greatgrandlink in grandchildlink.links -%}
+                              <li>
+                                <a
+                                  href="{{ greatgrandlink.url }}"
+                                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                                >
+                                  {{ greatgrandlink.title | escape }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
                       </li>
                     {%- endfor -%}
                   </ul>
