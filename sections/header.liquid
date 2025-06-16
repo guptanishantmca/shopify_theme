@@ -303,13 +303,6 @@
       </a>
     </div>
   </header>
-  {% assign mega_menu = settings.mega_menu_json | parse_json %}
-  <div class="relative group">
-    <a href="#" class="px-4 py-2 block text-black">Mega Menu</a>
-    <div class="absolute top-full left-0">
-      {% render 'recursive-menu', items: mega_menu, level: 1 %}
-    </div>
-  </div>
 </{{ header_tag }}>
 
 {%- if settings.cart_type == 'notification' -%}
