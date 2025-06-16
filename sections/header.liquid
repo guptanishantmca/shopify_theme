@@ -7,8 +7,6 @@
   media="print"
   onload="this.media='all'"
 >
-{% assign menu_data = settings.mega_menu_json | parse_json %}
-{% render 'recursive-menu', items: menu_data, level: 1 %}
 
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -305,6 +303,13 @@
       </a>
     </div>
   </header>
+  {% assign mega_menu = settings.mega_menu_json | parse_json %}
+  <div class="relative group">
+    <a href="#" class="px-4 py-2 block text-black">Mega Menu</a>
+    <div class="absolute top-full left-0">
+      {% render 'recursive-menu', items: mega_menu, level: 1 %}
+    </div>
+  </div>
 </{{ header_tag }}>
 
 {%- if settings.cart_type == 'notification' -%}
