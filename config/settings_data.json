@@ -121,6 +121,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "mega_menu_json": "[\n  {\n    \"title\": \"Products\",\n    \"url\": \"/collections/all\",\n    \"children\": [\n      {\n        \"title\": \"Men\",\n        \"url\": \"/collections/men\",\n        \"children\": [\n          {\n            \"title\": \"Shoes\",\n            \"url\": \"/collections/men-shoes\",\n            \"children\": [\n              {\n                \"title\": \"Sneakers\",\n                \"url\": \"/collections/sneakers\",\n                \"children\": [\n                  {\n                    \"title\": \"Nike\",\n                    \"url\": \"/collections/nike\"\n                  }\n                ]\n              }\n            ]\n          }\n        ]\n      }\n    ]\n  }\n]",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
