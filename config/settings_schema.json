@@ -1451,17 +1451,5 @@
         "default": "scheme-1"
       }
     ]
-  },
-  {
-  "name": "Mega Menu",
-  "settings": [
-    {
-      "type": "textarea",
-      "id": "mega_menu_json",
-      "label": "Mega Menu JSON",
-      "info": "Paste your 5-level menu JSON structure here."
-    }
-  ]
-}
-
+  }
 ]
